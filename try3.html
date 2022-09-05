@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <script type='text/javascript'>
+            //<![CDATA[ <!--from ww w .j a va 2s . c o m-->
+                window.onload=function()
+                {
+                
+                var canvas = document.getElementById('canvas');
+                 var c = canvas.getContext('2d'); 
+                 c.fillStyle = 'yellow'; 
+                 c.beginPath(); //Begin a path.. 
+                 c.moveTo(50, 25); //Startpoint (x, y) 
+                 c.lineTo(100, 50); //Point 1 (x, y) 
+                 c.lineTo(50, 75); //Point 2 (x, y) 
+                 c.closePath(); //Close the path. //Fill triangle with previous set color. 
+                 c.fill(); //Give triangle a stroke (width: 4 pixels).
+                  c.strokeStyle = 'blue' 
+                  c.lineWidth = 4; 
+                  c.stroke(); }//]]> 
+            </script> 
+            </head> 
+            <body> 
+                <canvas id="canvas" width="200" height="200"></canvas> 
+            </body>
+             </html>

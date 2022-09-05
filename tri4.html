@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.onload = draw; // Execute draw function when DOM is ready
+function draw() {
+        // Assign our canvas element to a variable 
+        var canvas = document.getElementById("canvas1");
+	// Create the HTML5 context object to enable draw methods
+        var ctx = canvas.getContext("2d"); 
+
+        canvas.width=window.innerWidth;
+        canvas.height=window.innerHeight;
+	// Draw Filled Shape 1 (center triangle of logo)
+        ctx.beginPath();
+        ctx.strokeStyle = "rgba(1,1,1,1)";
+        //ctx.lineWidth()=6;
+	ctx.moveTo(250, 100);
+	ctx.lineTo(100, 300);
+	ctx.lineTo(300, 300);
+    ctx.closePath();
+	//ctx.fillStyle = "rgba(0,0,0,1)";
+    
+	//ctx.fill();
+    ctx.stroke();
+
+}
+</script>
+</head>
+<body>
+<canvas id="canvas1" width="400" height="300"></canvas>
+</body>  
+</html>
